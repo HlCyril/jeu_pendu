@@ -30,3 +30,10 @@ def enlever_accents(mot):
         if mot[k] in u:
             mot[k] = 'u'
     return mot
+
+
+def lettre_dans_mot(lettre, mot, mot_cache):
+    indices = [i for i in range(len(mot)) if lettre in mot[i]]
+    for i in range(len(indices)):
+        mot_cache[indices[i]] = mot[indices[i]]
+    return mot_cache
