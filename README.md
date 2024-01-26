@@ -1,2 +1,6 @@
-# Lecture des mots
-Ces fichiers permettent de lire les mots dans un fichier, d'enlever les accents et de choisir un mot aléatoire parmi la liste des mots du fichier texte.
+# Jeu du pendu
+Il y a deux fichiers.
+Le fichier pendu.py est le fichier principal à exécuter.
+Le fichier mod.py contient toutes les fonctions utilisées dans le fichier principal.
+Les règles du jeu sont expliquées lorsque le programme est exécuté.
+Il ne faut pas oublier de mettre dans le meme dossier un fichier mots_pendu.txt.
