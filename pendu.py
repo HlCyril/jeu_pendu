@@ -37,7 +37,7 @@ print('Le mot choisi contient ', len(liste_mot), 'lettres')
 
 lettres_utilise = []
 
-while nombre_de_vie > 0 and mot_cache != liste_mot:
+while nombre_de_vie > 0 and ''.join(mot_cache) != mot:
 
     lettre = input("\nDonnez une lettre :")
 
