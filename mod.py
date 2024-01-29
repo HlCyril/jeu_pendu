@@ -47,6 +47,7 @@ def lettre_dans_mot(lettre, liste_mot, mot_cache, mot):
 def last_chance(liste_mot, mot_cache, mot):
     lettres = []
     for i in range(len(liste_mot)):
-        if liste_mot[i] != mot_cache[i]:
+        if mot[i] != mot_cache[i]:
             lettres.append(mot[i])
+    print(lettres)
     print(random.choice(lettres))
