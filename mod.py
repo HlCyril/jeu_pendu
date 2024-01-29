@@ -49,5 +49,4 @@ def last_chance(liste_mot, mot_cache, mot):
     for i in range(len(liste_mot)):
         if mot[i] != mot_cache[i]:
             lettres.append(mot[i])
-    print(lettres)
     print(random.choice(lettres))
