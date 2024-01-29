@@ -32,8 +32,16 @@ def enlever_accents(mot):
     return mot
 
 
-def lettre_dans_mot(lettre, mot, mot_cache):
-    indices = [i for i in range(len(mot)) if lettre in mot[i]]
+def lettre_dans_mot(lettre, liste_mot, mot_cache, mot):
+    indices = [i for i in range(len(liste_mot)) if lettre in liste_mot[i]]
     for i in range(len(indices)):
         mot_cache[indices[i]] = mot[indices[i]]
     return mot_cache
+
+
+def last_chance(liste_mot, mot_cache, mot):
+    lettres = []
+    for i in range(len(liste_mot)):
+        if liste_mot[i] != mot_cache[i]:
+            lettres.append(mot[i])
+    print(random.choice(lettres))
