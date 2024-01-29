@@ -1,6 +1,7 @@
 import random
 
 
+# Récupération des mots du fichier txt
 def lire_fichier(fichier_txt):
     with open(fichier_txt, 'r', encoding='utf-8') as fichier:
         lignes = fichier.readlines()
@@ -8,10 +9,12 @@ def lire_fichier(fichier_txt):
     return liste_mots
 
 
+# Choix du mot
 def choisir_mot(liste_mots):
     return random.choice(liste_mots)
 
 
+# Pour enlever les accents
 def enlever_accents(mot):
     a = ['à', 'ä', 'â']
     e = ['é', 'è', 'ë', 'ê']
@@ -32,6 +35,7 @@ def enlever_accents(mot):
     return mot
 
 
+# Si la lettre apparaît plusieurs fois dans le mot
 def lettre_dans_mot(lettre, liste_mot, mot_cache, mot):
     indices = [i for i in range(len(liste_mot)) if lettre in liste_mot[i]]
     for i in range(len(indices)):
@@ -39,6 +43,7 @@ def lettre_dans_mot(lettre, liste_mot, mot_cache, mot):
     return mot_cache
 
 
+# Fonction joker
 def last_chance(liste_mot, mot_cache, mot):
     lettres = []
     for i in range(len(liste_mot)):
