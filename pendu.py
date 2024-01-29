@@ -6,7 +6,7 @@ alphabet = list(string.ascii_lowercase)
 
 mon_fichier = 'mots_pendu.txt'
 
-# On définit le nombre de vie
+# On définit le nombre de vies
 nombre_de_vie = 6
 
 # On définit la valeur du joker
